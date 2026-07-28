@@ -15,12 +15,12 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
-          ref: main   # garante que está no branch principal
+          ref: main
 
       - name: Generate Stats
         run: |
-          curl -o stats.svg "https://github-readme-stats.vercel.app/api?username=angelo-marques&show_icons=true&theme=radical"
-          curl -o langs.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=angelo-marques&layout=compact&theme=radical"
+          curl --fail -H "Accept: image/svg+xml" -o stats.svg "https://github-readme-stats.vercel.app/api?username=angelo-marques&show_icons=true&theme=radical"
+          curl --fail -H "Accept: image/svg+xml" -o langs.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=angelo-marques&layout=compact&theme=radical"
 
       - name: Commit and Push
         run: |
