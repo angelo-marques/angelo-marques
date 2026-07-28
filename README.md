@@ -59,15 +59,6 @@ Minha carreira é marcada por projetos de alta complexidade, modernização de s
 
 ---
 
-## 📊 Estatísticas
-
-<p align="center">
-  <img src="stats.svg" />
-  <img src="langs.svg" />
-</p>
-
----
-
 ## 🏆 Conquistas
 
 <p align="center">
